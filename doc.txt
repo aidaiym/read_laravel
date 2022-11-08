@@ -1,0 +1,21 @@
+Create new laravel project 
+    composer create-project laravel/laravel laravel_test
+
+
+MVC -  is a software architectural pattern
+    HTTP строка -> HTTP request -> router -> controller -> model -> database
+                                                             |
+                                                            view
+
+
+
+1. Routes 
+    Get  - type of request. 
+        Arguments of get: 
+            1. url 
+            2. some action(function)
+
+
+2. Controllers - controll.  It is some action
+    name of controllers should be camelspace.
+
