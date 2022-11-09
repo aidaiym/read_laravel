@@ -19,3 +19,31 @@ MVC -  is a software architectural pattern
 2. Controllers - controll.  It is some action
     name of controllers should be camelspace.
 
+3. DataBase 
+    1. create database 
+        MAMP local server environment. 
+        Сервер — это компьютер с высокой вычислительной мощностью и круглосуточной бесперебойной работой, 
+        предназначенный для хранения информации и обеспечения доступа к ней с любого устройства пользователя.
+
+        php artisan make:model Post -m 
+               comment  // 'unix_socket' => env('DB_SOCKET', ''),
+          and add  'unix_socket' => '/Applications/MAMP/tmp/mysql/mysql.sock',
+
+php artisan make:migration add_column_description_to_posts_table
+
+
+Controllers
+
+Actions Handled By Resource Controller
+Verb	URI	Action	Route Name
+GET	/photos	index	photos.index
+GET	/photos/create	create	photos.create
+POST	/photos	store	photos.store
+GET	/photos/{photo}	show	photos.show
+GET	/photos/{photo}/edit	edit	photos.edit
+PUT/PATCH	/photos/{photo}	update	photos.update
+DELETE	/photos/{photo}	destroy	photos.destroy
+
+
+index - actions  
+post - realization

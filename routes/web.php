@@ -3,11 +3,11 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () { // get type of request. Arguments of get: 1. url 2. some action(function)
-    return 'view';
+    return  view('home.home');
 });
-
-Route::get('/home', function () {
-    return 'Home';
+Route::get('/about', function () { // get type of request. Arguments of get: 1. url 2. some action(function)
+    return  view('about.about');
 });
-
-Route::get('/post', [App\Http\Controllers\PostController::class, 'index']);  // action is index function in post controller
+Route::get('/book', [App\Http\Controllers\BookController::class, 'index'])->name('book.index'); 
+Route::get('/book/create', [App\Http\Controllers\BookController::class, 'create']);  // action is index function in post controller
+Route::post('/book/store', [App\Http\Controllers\BookController::class, 'store'])->name('book.store');  
