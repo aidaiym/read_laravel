@@ -195,6 +195,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // DomPDF package
+        Barryvdh\DomPDF\ServiceProvider::class,
     ],
 
     /*
@@ -211,5 +213,8 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
+
+    // PDF package
+    'PDF' => Barryvdh\DomPDF\Facade::class,
 
 ];
