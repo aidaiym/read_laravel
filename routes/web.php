@@ -12,3 +12,9 @@ Route::get('/book', [App\Http\Controllers\BookController::class, 'index'])->name
 Route::get('/book/create', [App\Http\Controllers\BookController::class, 'create']);  // action is index function in post controller
 Route::post('/book/store', [App\Http\Controllers\BookController::class, 'store'])->name('book.store');  
 Route::get('/generate_pdf', [App\Http\Controllers\PDFController::class, 'generatePDF']);
+Route::get('/forms', [App\Http\Controllers\FormController::class, 'index']);
+Route::post('/list', [App\Http\Controllers\ListController::class, 'index']);
+Route::post('/document', [App\Http\Controllers\StoreController::class, '__invoke'])->name('form.store');
+
+
+
