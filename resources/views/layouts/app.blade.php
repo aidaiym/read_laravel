@@ -2,9 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <title>@yeild('title-block')</title>
     <link rel="stylesheet" href="/css/app .css">
+
     <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">

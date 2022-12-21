@@ -14,6 +14,8 @@ Route::post('/book/store', [App\Http\Controllers\BookController::class, 'store']
 Route::get('/generate_pdf', [App\Http\Controllers\PDFController::class, 'generatePDF']);
 Route::get('/forms', [App\Http\Controllers\FormController::class, 'index']);
 Route::post('/list', [App\Http\Controllers\ListController::class, 'index']);
+Route::get('/test', [App\Http\Controllers\TestController::class, 'saveJson']);
+
 Route::post('/document', [App\Http\Controllers\StoreController::class, '__invoke'])->name('form.store');
 
 
