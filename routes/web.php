@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () { // get type of request. Arguments of get: 1. url 2. some action(function)
-    return  view('home.home');
+    return  view('final');
 });
 Route::get('/about', function () { // get type of request. Arguments of get: 1. url 2. some action(function)
     return  view('about.about');
